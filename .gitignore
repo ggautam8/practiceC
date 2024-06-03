@@ -7,4 +7,9 @@
 /dataSources/
 /dataSources.local.xml
 # ignoring .exe files
-../ASCII.exe
+*.exe
+# ignoring .idea folder
+/.idea
+/cmake-build-debug
+/CMakeLists.txt
+/main.cpp
