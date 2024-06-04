@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int roundUp(float);
-int roundDown(float);
+void roundUp(float);
+void roundDown(float);
 
 int main(){
        float num;
@@ -14,21 +14,24 @@ int main(){
 
        if(round == 1){
            printf("Enter the number to be rounded up:");
-           scanf("%f",num);
+           scanf("%f",&num);
            roundUp(num);
        }
        if(round == 2){
            printf("Enter the number to be rounded down:");
-           scanf("%f",num);
+           scanf("%f",&num);
            roundDown(num);
        }
 
 }
 
-int roundUp(float num){
-
+void roundUp(float num){
+     num = num + 0.999999999;
+     int y = (int)num;
+     printf("%d",y);
 }
 
-int roundDown(float num){
-
+void roundDown(float num){
+     int x = (int)num;
+     printf("%d",x);
 }

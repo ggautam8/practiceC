@@ -1,18 +1,21 @@
 #include<stdio.h>
 #include<ctype.h>
 
-void checkDigit(int num);
+void checkDigit(char c);
 
 int main(){
-    int num;
+    char c;
     printf("Enter any character:");
-    scanf("%d",&num);
+    scanf("%c",&c);
 
-    checkDigit(num);
+    checkDigit(c);
 }
 
-void checkDigit(int num){
-    if(isdigit(num)){
-        printf("%d is a digit",num);
+void checkDigit(char c){
+    if(c >= 48 && c <= 57){
+        printf("%c is a digit",c);
+    }
+    else{
+        printf("%c is not a digit",c);
     }
 }

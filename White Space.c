@@ -1,17 +1,21 @@
 #include<stdio.h>
 #include<ctype.h>
 
-void checkSpace();
+void checkSpace(char space);
 
 int main(){
-    printf("Press space:");
-    scanf(" ");
+    char space;
+     printf("Press space:");
+     scanf("%c",&space);
 
-    void checkSpace();
+     checkSpace(space);
 }
 
-void checkSpace(){
-    if(isspace()){
-
+void checkSpace(char space){
+    if(space == 32){
+        printf("You pressed space");
+    }
+    else{
+        printf("Wrong input");
     }
 }
